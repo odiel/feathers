@@ -4,6 +4,10 @@ namespace Feathers\Router;
 interface DestinationInterface
 {
 
-	public function handle(array! request);
+	public function beforeHandle(array! request);
+
+	public function handle();
+
+	public function afterHandle();
 
 }
