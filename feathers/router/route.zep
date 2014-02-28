@@ -1,7 +1,7 @@
 
 namespace Feathers\Router;
 
-class Route
+class Route implements RouteInterface
 {
 	
 
@@ -12,8 +12,6 @@ class Route
 	protected _converters;
 
 	protected _id;
-
-	
 
 	protected _beforeMatch;
 
@@ -30,13 +28,7 @@ class Route
 
 	protected _name;
 
-	/**
-	 * Phalcon\Mvc\Router\Route constructor
-	 *
-	 * @param string pattern
-	 * @param array paths
-	 * @param array|string httpMethods
-	 */
+
 	public function __construct(string! pattern, <\Feathers\Router\DestinationInterface> destination, <\Feathers\Router\MethodsCollection> methods = null)
 	{
 		let this->_destination = destination;
