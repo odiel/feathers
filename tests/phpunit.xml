@@ -1,0 +1,7 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="Object_Freezer">
+      <file>feathers/router/methodsCollectionTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
