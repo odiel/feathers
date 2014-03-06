@@ -1,7 +1,7 @@
 
 namespace Feathers\Router;
 
-class RouteCollection implements \IteratorAggregate, \Countable
+class RoutesCollection implements \IteratorAggregate, \Countable
 {
 
 	private _routes;
@@ -28,14 +28,14 @@ class RouteCollection implements \IteratorAggregate, \Countable
 		let routeName = route->getName();
 
 		if (routeName == "" || routeName == null) {
-			throw new \Exception("Routes must have a name.");
+			throw new \Feathers\Router\Exceptions\RouteWithNoNameException("Route must have a name.");
 		}
 
 		if (isset(this->_routes[routeName])) {
-			throw new \Exception("A Route was already defined with the same name.");
+			throw new \Feathers\Router\Exceptions\DuplicatedRouteNameException("A Route was already defined with the same name.");
 		}
 
-		let this->_methods[routeName] = route;
+		let this->_routes[routeName] = route;
 	}
 
 }

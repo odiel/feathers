@@ -8,7 +8,7 @@ class Router implements RouterInterface
 
 	public function __construct(<\Feathers\Router\RouteCollection> routes = null)
 	{
-		let this->_routes = new RouteCollection();
+		let this->_routes = new RoutesCollection();
 
 		if (routes != null) {
 			let this->_routes = routes;
