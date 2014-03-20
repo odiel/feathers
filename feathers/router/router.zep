@@ -5,6 +5,8 @@ class Router implements RouterInterface
 
 	private _routes;
 
+	private _notFoundDestination;
+
 
 	public function __construct(<\Feathers\Router\RouteCollection> routes = null)
 	{
@@ -53,6 +55,13 @@ class Router implements RouterInterface
 
 	public function addHead(string! pattern, string! name = null)
 	{
+		return this;
+	}
+
+	public function addNotFoundDestination(<\Feathers\Router\DestinationInterface> destination)
+	{
+		let this->_notFoundDestination = destination;
+
 		return this;
 	}
 

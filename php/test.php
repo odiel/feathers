@@ -30,6 +30,12 @@ $route->setName('route');
 
 $route->handle();
 
-var_dump($route->getMethods());
+//var_dump($route->getMethods());
 
-var_dump($route->getName());
+//var_dump($route->getName());
+
+//var_dump($route->getCompiledPattern());
+
+$request = new \Feathers\Request\HttpRequest();
+
+var_dump($request);

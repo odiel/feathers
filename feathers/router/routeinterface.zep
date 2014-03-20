@@ -7,7 +7,11 @@ interface RouteInterface
 
 	public function __construct(string! pattern, <\Feathers\Router\DestinationInterface> destination, <\Feathers\Router\MethodsCollection> methods = null);
 
+	public function getDestination() -> <\Feathers\Router\DestinationInterface>;
+
 	public function getPattern() -> string;
+
+	public function getCompiledPattern() -> string;
 
 	public function setMethods(<\Feathers\Router\MethodsCollection> methods);
 
