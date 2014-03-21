@@ -1,6 +1,6 @@
-namespace Feathers\Request;
+namespace Feathers\Request\Http;
 
-class HttpRequest extends Request implements HttpRequestInterface
+class Request extends \Feathers\Request\RequestAbstract implements RequestInterface
 {
 
 	protected _rawBody;
@@ -365,6 +365,28 @@ class HttpRequest extends Request implements HttpRequestInterface
 	}
 
 	/**
+	 * Returns the available headers in the request
+	 *
+	 * @return array
+	 */
+	public function getHeaders() -> <\Feathers\Request\HeadersCollection>
+	{
+		var headers, key, value;
+
+		let headers = new \Feathers\Request\HeadersCollection();
+
+		for key, value in _SERVER {
+			if starts_with(key, "HTTP_") {
+				var header;
+				let header = new \Feathers\Request\Header(str_replace("HTTP_", "", key), value);
+				headers->add(header);
+			}
+		}
+
+		return headers;
+	}
+
+	/**
 	 * Checks whether request include attached files
 	 *
 	 * @return boolean
@@ -400,23 +422,23 @@ class HttpRequest extends Request implements HttpRequestInterface
 
 	public function getUploadedFiles(boolean onlySuccessful=false) -> <\Feathers\Request\FilesCollection>
 	{
-		/*
-		var files, superFiles, file, error, name, type, tmpName, size, prefix;
+		var filesCollection, superFiles, file, error, name, type, tmpName, size, prefix;
+
+		let filesCollection = new \Feathers\Request\FilesCollection();
 
 		let superFiles = _FILES;
 
 		if typeof superFiles != "array" || !count(superFiles) {
-			return [];
+			return filesCollection;
 		}
 
-		let files = [];
 		for file in superFiles {
 
 			if fetch error, file["error"] {
 
 				if typeof error != "array" {
 					if !error || !onlySuccessful {
-						let files[] = new \Phalcon\Http\Request\File(file);
+						filesCollection->add(new \Feathers\Request\HttpRequestFile(file));
 					}
 				}
 
@@ -427,13 +449,19 @@ class HttpRequest extends Request implements HttpRequestInterface
 					&& fetch size, file["size"]
 				{
 					let prefix = "fix-me";
-					//let files = this->getUploadedFilesHelper(files, name, type, tmpName, error, size, onlySuccessful, prefix);
 				}
 			}
 		}
 
-		return files;
+/*
+
+
+		let files = [];
+		
+
 		*/
+
+		return filesCollection;
 	}
 
 
@@ -442,7 +470,6 @@ class HttpRequest extends Request implements HttpRequestInterface
 
 	private function _hasFileHelper(data, boolean onlySuccessful) -> long
 	{
-		/*
 		var value;
 		int numberFiles = 0;
 
@@ -458,11 +485,10 @@ class HttpRequest extends Request implements HttpRequestInterface
 			}
 
 			if typeof value == "array" {
-				let numberFiles += this->hasFileHelper(value, onlySuccessful);
+				let numberFiles += this->_hasFileHelper(value, onlySuccessful);
 			}
 		}
 
 		return numberFiles;
-		*/
 	}
 }

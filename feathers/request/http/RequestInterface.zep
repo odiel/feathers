@@ -1,6 +1,6 @@
-namespace Feathers\Request;
+namespace Feathers\Request\Http;
 
-interface HttpRequestInterface
+interface RequestInterface
 {
 
 	public function getServer(string! name) -> string;
@@ -58,6 +58,8 @@ interface HttpRequestInterface
 	public function isDelete() -> boolean;
 
 	public function isOptions() -> boolean;
+
+	public function getHeaders() -> <\Feathers\Request\HeadersCollection>;
 
 	public function hasFiles(boolean onlySuccessful = false) -> long;
 

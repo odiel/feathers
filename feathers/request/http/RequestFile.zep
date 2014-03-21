@@ -1,7 +1,7 @@
 
-namespace Feathers\Request;
+namespace Feathers\Request\Http;
 
-class HttpRequestFile extends \Types\IO\FileAbstract
+class RequestFile extends \Feathers\Types\IO\FileAbstract
 {
 
 	public function copyTo(string! path)
