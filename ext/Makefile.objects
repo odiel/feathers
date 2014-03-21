@@ -1,0 +1,102 @@
+feathers.lo: /home/odiel/repos/feathers/ext/feathers.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers.c -o feathers.lo 
+kernel/main.lo: /home/odiel/repos/feathers/ext/kernel/main.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/main.c -o kernel/main.lo 
+kernel/memory.lo: /home/odiel/repos/feathers/ext/kernel/memory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/memory.c -o kernel/memory.lo 
+kernel/exception.lo: /home/odiel/repos/feathers/ext/kernel/exception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/exception.c -o kernel/exception.lo 
+kernel/hash.lo: /home/odiel/repos/feathers/ext/kernel/hash.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/hash.c -o kernel/hash.lo 
+kernel/debug.lo: /home/odiel/repos/feathers/ext/kernel/debug.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/debug.c -o kernel/debug.lo 
+kernel/backtrace.lo: /home/odiel/repos/feathers/ext/kernel/backtrace.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/backtrace.c -o kernel/backtrace.lo 
+kernel/object.lo: /home/odiel/repos/feathers/ext/kernel/object.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/object.c -o kernel/object.lo 
+kernel/array.lo: /home/odiel/repos/feathers/ext/kernel/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/array.c -o kernel/array.lo 
+kernel/extended/array.lo: /home/odiel/repos/feathers/ext/kernel/extended/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/extended/array.c -o kernel/extended/array.lo 
+kernel/string.lo: /home/odiel/repos/feathers/ext/kernel/string.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/string.c -o kernel/string.lo 
+kernel/fcall.lo: /home/odiel/repos/feathers/ext/kernel/fcall.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/fcall.c -o kernel/fcall.lo 
+kernel/require.lo: /home/odiel/repos/feathers/ext/kernel/require.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/require.c -o kernel/require.lo 
+kernel/file.lo: /home/odiel/repos/feathers/ext/kernel/file.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/file.c -o kernel/file.lo 
+kernel/operators.lo: /home/odiel/repos/feathers/ext/kernel/operators.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/operators.c -o kernel/operators.lo 
+kernel/concat.lo: /home/odiel/repos/feathers/ext/kernel/concat.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/concat.c -o kernel/concat.lo 
+kernel/variables.lo: /home/odiel/repos/feathers/ext/kernel/variables.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/kernel/variables.c -o kernel/variables.lo 
+feathers/http/methods.lo: /home/odiel/repos/feathers/ext/feathers/http/methods.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/http/methods.c -o feathers/http/methods.lo 
+feathers/http/statuscodes.lo: /home/odiel/repos/feathers/ext/feathers/http/statuscodes.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/http/statuscodes.c -o feathers/http/statuscodes.lo 
+feathers/request/cli/request.lo: /home/odiel/repos/feathers/ext/feathers/request/cli/request.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/cli/request.c -o feathers/request/cli/request.lo 
+feathers/request/cli/requestinterface.lo: /home/odiel/repos/feathers/ext/feathers/request/cli/requestinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/cli/requestinterface.c -o feathers/request/cli/requestinterface.lo 
+feathers/request/filescollection.lo: /home/odiel/repos/feathers/ext/feathers/request/filescollection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/filescollection.c -o feathers/request/filescollection.lo 
+feathers/request/header.lo: /home/odiel/repos/feathers/ext/feathers/request/header.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/header.c -o feathers/request/header.lo 
+feathers/request/headerinterface.lo: /home/odiel/repos/feathers/ext/feathers/request/headerinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/headerinterface.c -o feathers/request/headerinterface.lo 
+feathers/request/headerscollection.lo: /home/odiel/repos/feathers/ext/feathers/request/headerscollection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/headerscollection.c -o feathers/request/headerscollection.lo 
+feathers/request/http/request.lo: /home/odiel/repos/feathers/ext/feathers/request/http/request.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/http/request.c -o feathers/request/http/request.lo 
+feathers/request/http/requestfile.lo: /home/odiel/repos/feathers/ext/feathers/request/http/requestfile.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/http/requestfile.c -o feathers/request/http/requestfile.lo 
+feathers/request/http/requestinterface.lo: /home/odiel/repos/feathers/ext/feathers/request/http/requestinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/http/requestinterface.c -o feathers/request/http/requestinterface.lo 
+feathers/request/methodscollection.lo: /home/odiel/repos/feathers/ext/feathers/request/methodscollection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/methodscollection.c -o feathers/request/methodscollection.lo 
+feathers/request/requestabstract.lo: /home/odiel/repos/feathers/ext/feathers/request/requestabstract.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/requestabstract.c -o feathers/request/requestabstract.lo 
+feathers/request/requestinterface.lo: /home/odiel/repos/feathers/ext/feathers/request/requestinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/request/requestinterface.c -o feathers/request/requestinterface.lo 
+feathers/router/destinationinterface.lo: /home/odiel/repos/feathers/ext/feathers/router/destinationinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/destinationinterface.c -o feathers/router/destinationinterface.lo 
+feathers/router/exceptions/duplicatedroutenameexception.lo: /home/odiel/repos/feathers/ext/feathers/router/exceptions/duplicatedroutenameexception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/exceptions/duplicatedroutenameexception.c -o feathers/router/exceptions/duplicatedroutenameexception.lo 
+feathers/router/exceptions/routewithnonameexception.lo: /home/odiel/repos/feathers/ext/feathers/router/exceptions/routewithnonameexception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/exceptions/routewithnonameexception.c -o feathers/router/exceptions/routewithnonameexception.lo 
+feathers/router/methodscollection.lo: /home/odiel/repos/feathers/ext/feathers/router/methodscollection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/methodscollection.c -o feathers/router/methodscollection.lo 
+feathers/router/route.lo: /home/odiel/repos/feathers/ext/feathers/router/route.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/route.c -o feathers/router/route.lo 
+feathers/router/routeinterface.lo: /home/odiel/repos/feathers/ext/feathers/router/routeinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/routeinterface.c -o feathers/router/routeinterface.lo 
+feathers/router/router.lo: /home/odiel/repos/feathers/ext/feathers/router/router.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/router.c -o feathers/router/router.lo 
+feathers/router/routerinterface.lo: /home/odiel/repos/feathers/ext/feathers/router/routerinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/routerinterface.c -o feathers/router/routerinterface.lo 
+feathers/router/routescollection.lo: /home/odiel/repos/feathers/ext/feathers/router/routescollection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/router/routescollection.c -o feathers/router/routescollection.lo 
+feathers/types/typesexception.lo: /home/odiel/repos/feathers/ext/feathers/types/typesexception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/typesexception.c -o feathers/types/typesexception.lo 
+feathers/types/typesinterface.lo: /home/odiel/repos/feathers/ext/feathers/types/typesinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/typesinterface.c -o feathers/types/typesinterface.lo 
+feathers/types/io/fileabstract.lo: /home/odiel/repos/feathers/ext/feathers/types/io/fileabstract.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/io/fileabstract.c -o feathers/types/io/fileabstract.lo 
+feathers/types/io/fileinterface.lo: /home/odiel/repos/feathers/ext/feathers/types/io/fileinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/io/fileinterface.c -o feathers/types/io/fileinterface.lo 
+feathers/types/net/addressinterface.lo: /home/odiel/repos/feathers/ext/feathers/types/net/addressinterface.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/net/addressinterface.c -o feathers/types/net/addressinterface.lo 
+feathers/types/net/exceptions/ipv4/invalidformatexception.lo: /home/odiel/repos/feathers/ext/feathers/types/net/exceptions/ipv4/invalidformatexception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/net/exceptions/ipv4/invalidformatexception.c -o feathers/types/net/exceptions/ipv4/invalidformatexception.lo 
+feathers/types/net/exceptions/ipv4/octetoutofrangeexception.lo: /home/odiel/repos/feathers/ext/feathers/types/net/exceptions/ipv4/octetoutofrangeexception.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/net/exceptions/ipv4/octetoutofrangeexception.c -o feathers/types/net/exceptions/ipv4/octetoutofrangeexception.lo 
+feathers/types/net/ipv4.lo: /home/odiel/repos/feathers/ext/feathers/types/net/ipv4.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/odiel/repos/feathers/ext $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/odiel/repos/feathers/ext/feathers/types/net/ipv4.c -o feathers/types/net/ipv4.lo 
+$(phplibdir)/feathers.la: ./feathers.la
+	$(LIBTOOL) --mode=install cp ./feathers.la $(phplibdir)
+
+./feathers.la: $(shared_objects_feathers) $(FEATHERS_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_feathers) $(FEATHERS_SHARED_LIBADD)
+

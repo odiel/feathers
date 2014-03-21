@@ -1,0 +1,5 @@
+
+extern zend_class_entry *feathers_types_net_exceptions_ipv4_octetoutofrangeexception_ce;
+
+ZEPHIR_INIT_CLASS(Feathers_Types_Net_Exceptions_IpV4_OctetOutOfRangeException);
+

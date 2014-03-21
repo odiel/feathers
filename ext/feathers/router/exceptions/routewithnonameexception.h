@@ -1,0 +1,5 @@
+
+extern zend_class_entry *feathers_router_exceptions_routewithnonameexception_ce;
+
+ZEPHIR_INIT_CLASS(Feathers_Router_Exceptions_RouteWithNoNameException);
+
