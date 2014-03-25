@@ -5,6 +5,7 @@ php:
 - 5.5
 
 before_install:
+- chmod a+x ./unit-tests/ci/install_prereqs.sh
 - ./unit-tests/ci/install_prereqs.sh
 
 before_script:
