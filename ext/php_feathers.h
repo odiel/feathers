@@ -12,7 +12,7 @@
 #define PHP_FEATHERS_VERSION     "0.0.1"
 #define PHP_FEATHERS_EXTNAME     "feathers"
 #define PHP_FEATHERS_AUTHOR      ""
-#define PHP_FEATHERS_ZEPVERSION  "0.3.10a"
+#define PHP_FEATHERS_ZEPVERSION  "0.4.0a"
 #define PHP_FEATHERS_DESCRIPTION ""
 
 
